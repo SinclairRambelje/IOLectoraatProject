@@ -1,0 +1,33 @@
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\ApplicationInsights.config
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\csc.exe
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\System.Collections.Immutable.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\vbc.exe
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\VBCSCompiler.exe
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\VBCSCompiler.exe.config
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.dll.config
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.pdb
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.Web.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.WindowsServer.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.ApplicationInsights.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.Web.xml
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.WindowsServer.xml
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.ApplicationInsights.xml
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.csprojResolveAssemblyReference.cache
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.dll
+c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.pdb
