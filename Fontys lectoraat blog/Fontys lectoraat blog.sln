@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontysDataObjects", "Fontys
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormTestApp", "WindowsFormTestApp\WindowsFormTestApp.csproj", "{3AAB0C76-DA58-4349-BF77-5692925C21F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{954C7701-FAE1-40F6-8040-E83816A44662}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3AAB0C76-DA58-4349-BF77-5692925C21F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AAB0C76-DA58-4349-BF77-5692925C21F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AAB0C76-DA58-4349-BF77-5692925C21F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954C7701-FAE1-40F6-8040-E83816A44662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954C7701-FAE1-40F6-8040-E83816A44662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954C7701-FAE1-40F6-8040-E83816A44662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954C7701-FAE1-40F6-8040-E83816A44662}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
