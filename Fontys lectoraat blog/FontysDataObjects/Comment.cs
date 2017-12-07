@@ -33,7 +33,7 @@ public class Comment {
 			return message;
 		}
 		set {
-            message = value;
+			message = value;
 		}
 	}
 	private Boolean approved;

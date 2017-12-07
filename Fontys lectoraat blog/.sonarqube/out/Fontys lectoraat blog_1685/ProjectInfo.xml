@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Fontys lectoraat blog</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>871aa6bc-eafc-4020-91bf-70cb3b7ee822</ProjectGuid>
+  <FullPath>C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\Fontys lectoraat blog.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\.sonarqube\out\\Fontys lectoraat blog_1685\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\.sonarqube\out\\Fontys lectoraat blog_1685</Property>
+    <Property Name="sonar.stylecop.projectFilePath">C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\Fontys lectoraat blog.csproj</Property>
+  </AnalysisSettings>
+</ProjectInfo>

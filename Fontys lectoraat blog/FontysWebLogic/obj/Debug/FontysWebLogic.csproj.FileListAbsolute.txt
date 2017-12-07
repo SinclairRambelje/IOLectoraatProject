@@ -1,0 +1,13 @@
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\FontysWebLogic.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\FontysWebLogic.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\DevExpress.Xpo.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\DevExpress.Xpo.v16.1.Extensions.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\FontysDataObjects.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\FontysDataObjects.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\obj\Debug\FontysWebLogic.csprojResolveAssemblyReference.cache
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\obj\Debug\FontysWebLogic.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysWebLogic\obj\Debug\FontysWebLogic.pdb

@@ -1,5 +1,7 @@
 using System;
-public class Admin : Rescue3DataObjects.User  {
+public class Admin {
 	private int employeeID;
+
+	private User user;
 
 }

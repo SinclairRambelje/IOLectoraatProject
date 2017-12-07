@@ -1,0 +1,7 @@
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\bin\Debug\FontysDataObjects.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\bin\Debug\FontysDataObjects.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\bin\Debug\DevExpress.Xpo.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\bin\Debug\DevExpress.Xpo.v16.1.Extensions.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\obj\Debug\FontysDataObjects.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\FontysDataObjects\obj\Debug\FontysDataObjects.pdb

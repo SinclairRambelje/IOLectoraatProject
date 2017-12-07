@@ -31,3 +31,36 @@ c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fonty
 c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.csprojResolveAssemblyReference.cache
 c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.dll
 c:\users\sinne\documents\visual studio 2015\Projects\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\ApplicationInsights.config
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\csc.exe
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\vbc.exe
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\VBCSCompiler.exe
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.dll.config
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Fontys lectoraat blog.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.Web.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.Web.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.csprojResolveAssemblyReference.cache
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys lectoraat blog\obj\Debug\Fontys lectoraat blog.pdb

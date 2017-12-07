@@ -1,0 +1,198 @@
+﻿* {
+  font-family: Arial Narrow;
+}
+
+h1 {
+
+    color: #663366;
+     text-align:center;
+  font-size: 25px;
+  
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  float: left;
+}
+
+#divLoginForm {
+width: 400px; margin-left: auto; margin-right:auto;
+  
+}
+
+#divMainContent {
+
+    width: 75%;
+     margin-left: auto;
+      margin-right:auto;
+}
+
+
+#divMainContentInner {
+
+    width: 75%;
+     margin-left: auto;
+      margin-right:auto;
+}
+/* ~~ Default Navigation Bar ~~ */
+
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 90px;
+}
+
+.navigation-bar {
+  background-color: #663366;
+  height: 80px;
+  width: 100%;
+  text-align:right;
+  
+}
+.navigation-bar img{
+float:left;
+    padding-top: 15px;
+  
+}
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.navigation-bar li {
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: white;
+  font-size: 12px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 80px;
+  padding: 5px 15px;
+
+}
+
+#menu {
+  float: right;
+}
+
+
+
+/* ~~ User Navigation Bar ~~ */
+
+
+.user-navigation-bar {
+  background-color: #0076e0;
+  height: 40px;
+  width: 100%;
+  text-align:right;
+  
+}
+
+.user-navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.user-navigation-bar li {
+  display: inline;
+}
+
+.user-navigation-bar a {
+  color: white;
+  font-size: 12px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 40px;
+  padding: 5px 15px;
+
+}
+
+/* ~~ Lector Toolmenu ~~ */
+
+#primary_nav_wrap
+{
+
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:white;
+	text-decoration:none;
+
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+
+
+#primary_nav_wrap ul li:hover
+{
+	background:#0076e0;
+
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#0076e0;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}

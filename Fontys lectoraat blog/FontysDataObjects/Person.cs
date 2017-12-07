@@ -1,99 +1,121 @@
 using System;
-namespace Rescue3DataObjects {
-	public class Person {
-	
-		private String firstname;
-		public String Firstname {
-			get {
-				return firstname;
-			}
-			set {
-				firstname = value;
-			}
-		}
+using DevExpress.Xpo;
 
-		private String initialsWithSurname;
-		public String InitialsWithSurname {
-			get {
-				return initialsWithSurname;
-			}
-			set {
-				initialsWithSurname = value;
-			}
-		}
-	
-		private String email;
-		public String Email {
-			get {
-				return email;
-			}
-			set {
-				email = value;
-			}
-		}
+public class Person : XPObject
+{
 
-		private String phone;
-		public String Phone {
-			get {
-				return phone;
-			}
-			set {
-				phone = value;
-			}
-		}
 
-		private String addressLine1;
-		public String AddressLine1 {
-			get {
-				return addressLine1;
-			}
-			set {
-				addressLine1 = value;
-			}
-		}
+    [DbType("nvarchar(1024)")] private String firstname;
 
-		private String addressLine2;
-		public String AddressLine2 {
-			get {
-				return addressLine2;
-			}
-			set {
-				addressLine2 = value;
-			}
-		}
+    public String Firstname
+    {
+        get { return firstname; }
+        set { firstname = value; }
+    }
 
-		private String zipCode;
-		public String ZipCode {
-			get {
-				return zipCode;
-			}
-			set {
-				zipCode = value;
-			}
-		}
-	
-		private String place;
-		public String Place {
-			get {
-				return place;
-			}
-			set {
-				place = value;
-			}
-		}
+    [DbType("nvarchar(1024)")] private String initials;
 
-		private String country;
-		public String Country {
-			get {
-				return country;
-			}
-			set {
-				country = value;
-			}
-		}
+    public String Initials
+    {
+        get { return initials; }
+        set { initials = value; }
+    }
 
-		private User user;
+    [DbType("nvarchar(1024)")] private String surname;
 
-	}
+    public String Surname
+    {
+        get { return surname; }
+        set { surname = value; }
+    }
 
+
+
+    [DbType("nvarchar(1024)")] private String email;
+
+    public String Email
+    {
+        get { return email; }
+        set { email = value; }
+    }
+
+    [DbType("nvarchar(1024)")] private String phone;
+
+    public String Phone
+    {
+        get { return phone; }
+        set { phone = value; }
+    }
+
+    [DbType("nvarchar(512)")] private String addressLine1;
+
+    public String AddressLine1
+    {
+        get { return addressLine1; }
+        set { addressLine1 = value; }
+    }
+
+    [DbType("nvarchar(512)")] private String addressLine2;
+
+    public String AddressLine2
+    {
+        get { return addressLine2; }
+        set { addressLine2 = value; }
+    }
+
+    [DbType("nvarchar(512)")] private String zipCode;
+
+    public String ZipCode
+    {
+        get { return zipCode; }
+        set { zipCode = value; }
+    }
+
+    [DbType("nvarchar(512)")] private String place;
+
+    public String Place
+    {
+        get { return place; }
+        set { place = value; }
+    }
+
+
+    private User user;
+
+    public User User
+    {
+        get { return user; }
+        set
+        {
+            if ((user == value))
+            {
+                return;
+            }
+
+
+            User prevOwner = user;
+            user = value;
+            if (IsLoading)
+            {
+                return;
+            }
+
+            if ((!(prevOwner == null)
+                 && (user.Person == this)))
+            {
+                user.Person = null;
+            }
+
+
+            if (!(user == null))
+            {
+                user.Person = this;
+            }
+
+            OnChanged("Owner");
+        }
+
+    }
 }
+
+

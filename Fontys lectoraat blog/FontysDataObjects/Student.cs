@@ -1,5 +1,5 @@
 using System;
-public class Student : Rescue3DataObjects.User  {
+public class Student {
 	private int studentnummer;
 	public int Studentnummer {
 		get {
@@ -10,5 +10,7 @@ public class Student : Rescue3DataObjects.User  {
 		}
 	}
 
+
+	private User user;
 
 }

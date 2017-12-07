@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Fontys.Master.cs" Inherits="Fontys_Lectoraat_Website.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="Styles/FontysInteractionDesign.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    
+    
+    
+
+       <%if (User != null) { %>
+    <!----------------------------------------Start of the user navigation bar------------------------------------->
+    
+    <div class="user-navigation-bar">
+    <div id="navigation-container">
+  <nav id="primary_nav_wrap">
+<ul>
+
+  <li><a href="#">Nieuw</a>
+    <ul>
+      <li><a href="#">Project Blog</a></li>
+      <li><a href="#">Event Blog</a></li>
+      <li><a href="#">Lectoraat Blog</a></li>
+      <li><a href="Control/NewProject.aspx">Project</a>
+       
+      </li>
+     
+    </ul>
+  </li>
+  <li><a href="#">Manage</a>
+  
+  </li>
+  <li><a href="#">Mijn profiel</a>
+  
+  </li>
+
+  <li><a href="#">Log out</a></li>
+</ul>
+</nav>
+  </div>
+  </div>
+        <!----------------------------------------End of the user navigation bar------------------------------------->
+     <% } %>
+    
+    
+    
+
+<div class="navigation-bar">
+      <!----------------------------------------Start of the default navigation bar------------------------------------->
+
+    <div id="navigation-container">
+
+
+        <img src="https://fontys.nl/static/fontysrdpresentation/images/logo-inverted@2x.png" height="47" width="90">
+
+        <ul>
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Projecten</a>
+            </li>
+            <li>
+                <a href="#">Blogs</a>
+            </li>
+            <li>
+                <a href="#">Evenementen</a>
+            </li>
+            <li>
+                <a href="#">Kennisdeling</a>
+            </li>
+            <li>
+                <a href="LogIn.aspx">Login</a>
+            </li>
+        </ul>
+    </div>
+     <!----------------------------------------End of the default navigation bar------------------------------------->
+</div>
+
+
+<form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>

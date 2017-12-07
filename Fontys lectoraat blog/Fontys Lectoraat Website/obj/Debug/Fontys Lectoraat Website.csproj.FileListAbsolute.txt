@@ -1,0 +1,56 @@
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\ApplicationInsights.config
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\csc.exe
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\vbc.exe
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\VBCSCompiler.exe
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Fontys Lectoraat Website.dll.config
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Fontys Lectoraat Website.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Fontys Lectoraat Website.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.Web.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Helpers.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Mvc.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Razor.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Webpages.Deployment.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Webpages.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Webpages.Razor.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.Web.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Razor.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Webpages.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Webpages.Deployment.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Webpages.Razor.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Helpers.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\System.Web.Mvc.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\obj\Debug\Fontys Lectoraat Website.csprojResolveAssemblyReference.cache
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\obj\Debug\Fontys Lectoraat Website.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\obj\Debug\Fontys Lectoraat Website.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\DevExpress.Data.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\DevExpress.Xpo.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\DevExpress.Xpo.v16.1.Extensions.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\FontysWebLogic.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Newtonsoft.Json.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\FontysDataObjects.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\FontysWebLogic.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Newtonsoft.Json.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\Newtonsoft.Json.xml
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\Fontys Lectoraat Website\bin\FontysDataObjects.pdb
