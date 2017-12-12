@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using DevExpress.Xpo;
+
 public class ProjectContext {
 	public String GetPortfolio(String data) {
 		throw new System.Exception("Not implemented");
@@ -6,7 +10,20 @@ public class ProjectContext {
 	public String GetAllProjects(String data) {
 		throw new System.Exception("Not implemented");
 	}
-	public String GetHomepageProjects(String data) {
+
+    public List<ProjectTag> GetAllProjectTags()
+    {
+        XPCollection<ProjectTag> collection = new XPCollection<ProjectTag>();
+        return collection.ToList();
+    }
+
+    public void AddProjectTag(string tag)
+    {
+        ProjectTag projectTag = new ProjectTag();
+        projectTag.Tag = tag;
+        projectTag.Save();
+    }
+    public String GetHomepageProjects(String data) {
 		throw new System.Exception("Not implemented");
 	}
 	public String FilerProjects(String data) {
@@ -17,6 +34,12 @@ public class ProjectContext {
 	}
 	public String New_Project(String data) {
 		throw new System.Exception("Not implemented");
+
+
+        Project project = new Project();
+
+
+
 	}
 	public String View_Partaken_Projects(String data) {
 		throw new System.Exception("Not implemented");

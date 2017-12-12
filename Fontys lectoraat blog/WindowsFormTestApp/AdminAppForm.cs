@@ -42,9 +42,9 @@ namespace WindowsFormTestApp
 
                 Person =  new
                 {
-                    Firstname = "",
-                    Initials = "",
-                    Surname = "",
+                    Firstname = tbFirstname.Text,
+                    Initials = tbInitials.Text,
+                    Surname = TbSurname.Text,
                     Email = "",
                     Phone = "",
                     AddressLine1 = "",
@@ -91,6 +91,26 @@ namespace WindowsFormTestApp
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            logic.ProjectContext.AddProjectTag(tbProjecttag.Text);
+        }
+
+        private void tbProjecttag_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

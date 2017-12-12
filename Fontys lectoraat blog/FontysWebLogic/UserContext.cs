@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using DevExpress.Xpo;
 using Newtonsoft.Json.Linq;
 
@@ -38,6 +40,16 @@ public class UserContext {
 
 	    return "";
 	}
+
+    public String Test(String data)
+    {
+
+
+        Person person = new Person();
+        person.Firstname = data;
+        person.Save();
+        return "";
+    }
 
     public String RegisterLector(String data)
     {
@@ -114,6 +126,10 @@ public class UserContext {
 	public void IsLector() {
 		throw new System.Exception("Not implemented");
 	}
-
+    public List<Lector> GetAllLectors()
+    {
+        XPCollection<Lector> collection = new XPCollection<Lector>();
+        return collection.ToList();
+    }
 
 }

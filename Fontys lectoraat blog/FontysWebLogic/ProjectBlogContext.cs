@@ -1,9 +1,15 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using DevExpress.Xpo;
+
 public class ProjectBlogContext {
 	public String GetAllProjectBlogs(String data) {
 		throw new System.Exception("Not implemented");
 	}
-	public String GetProjectBlog(String data) {
+
+   
+    public String GetProjectBlog(String data) {
 		throw new System.Exception("Not implemented");
 	}
 	public String FilterProjectBlogs(String data) {

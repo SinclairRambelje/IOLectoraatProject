@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using DevExpress.Xpo;
 
-public class Project {
+public class Project : XPObject
+ {
 	private String titel;
-	public String Titel {
+    [DbType("nvarchar(3000)")]
+    public String Titel {
 		get {
 			return titel;
 		}
@@ -12,7 +15,8 @@ public class Project {
 		}
 	}
 	private String proposal;
-	public String Proposal {
+    [DbType("nvarchar(max)")]
+    public String Proposal {
 		get {
 			return proposal;
 		}
@@ -20,48 +24,84 @@ public class Project {
 			proposal = value;
 		}
 	}
-	private List<String> donors;
-	public List<String> Donors {
+	private String donators;
+    [DbType("nvarchar(1000)")]
+    public String Donators {
 		get {
-			return donors;
+			return donators;
 		}
 		set {
-			donors = value;
+            donators = value;
 		}
 	}
-	private List<DateTime> duration;
-	public List<DateTime> Duration {
-		get {
-			return duration;
-		}
-		set {
-			duration = value;
-		}
-	}
-	private String result;
-	public String Result {
-		get {
-			return result;
-		}
-		set {
-			result = value;
-		}
-	}
-	private List<string> participants;
-	public List<string> Participants {
+
+    private DateTime startDate;
+
+    private DateTime endDate;
+    [DbType("nvarchar(1000)")]
+    public DateTime StartDate
+    {
+        get { return startDate; }
+        set { startDate = value; }
+    }
+    [DbType("nvarchar(1000)")]
+    public DateTime EndDate
+    {
+        get { return endDate; }
+        set { endDate = value; }
+    }
+
+
+ //   private String result;
+
+ //   public String Result {
+	//	get {
+	//		return result;
+	//	}
+	//	set {
+	//		result = value;
+	//	}
+	//}
+	private String participants;
+    [DbType("nvarchar(3000)")]
+    public String Participants {
 		get {
 			return participants;
 		}
 		set {
 			participants = value;
 		}
-	}
+    }
 
-	private ProjectTag[] tags;
-	private Lector[] lectorParticipants;
+    [Association]
+    public XPCollection<ProjectTag> ProjectTags
+    {
+        get { return GetCollection<ProjectTag>("ProjectTags"); }
+    }
 
-	private Lector createdBy;
-	private Student[] studentParticipants;
-	private Lector[] governed;
+    
+
+
+    [Association("lectorParticipants")]
+    public XPCollection<Lector> LectorParticipants
+    {
+        get { return GetCollection<Lector>("LectorParticipants"); }
+    }
+
+    [Association("LectorsProjectsGoverned")]
+    public XPCollection<Lector> Governed
+    {
+        get { return GetCollection<Lector>("Governed"); }
+    }
+
+
+    [Association]
+    public Lector CreatedBy;
+
+
+
+
+    private Student[] studentParticipants;
+
 
 }

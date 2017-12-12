@@ -33,6 +33,12 @@ width: 400px; margin-left: auto; margin-right:auto;
 }
 
 
+   form  { display: table;      }
+   p     { display: table-row;  }
+   label { display: table-cell; }
+   input { display: table-cell; }
+
+
 #divMainContentInner {
 
     width: 75%;
