@@ -42,7 +42,8 @@
                 autocomplete: { delay: 0, minLength: 1 },
 
                 afterTagAdded: function(event, ui) {
-                  $("#<%= hdnSelectedParticipants.ClientID %>").val($('#<%= txtParticipants.ClientID %>').tagit("assignedTags"));
+                    $("#<%= hdnSelectedParticipants.ClientID %>")
+                        .val($('#<%= txtParticipants.ClientID %>').tagit("assignedTags"));
                 }
             });
 
@@ -66,30 +67,48 @@
                     $("#<%= hdnSelectedDonators.ClientID %>")
                         .val($('#<%= txtSponsor.ClientID %>').tagit("assignedTags"));
                 }
-               });
-              $('#<%= txtPartners.ClientID %>').tagit({
+              });
+
+                  $('#<%= txtPartners.ClientID %>').tagit({
     
 
                 autocomplete: { delay: 0, minLength: 1 },
 
                 afterTagAdded: function(event, ui) {
-                    $("#<%= hdnSelectedPartners.ClientID %>")
+                    $("#<%= hdnSelectedParters.ClientID %>")
                         .val($('#<%= txtPartners.ClientID %>').tagit("assignedTags"));
                 }
                });
 
+
         });
 
+           $( document ).ready(function() {
+               CKEDITOR.replace('<%= tbWYSIWYG.ClientID %>');
 
-             CKEDITOR.replace('<%= TextBox1.ClientID %>');
+               $('#<%= txtLooptijdvan.ClientID %>').datepicker({
+                   changeMonth: true,
+                   changeYear: true,
+                   showButtonPanel: true
+                  
+               });
+
+                $('#<%= txtLooptijdtot.ClientID %>').datepicker({
+                   changeMonth: true,
+                   changeYear: true,
+                   showButtonPanel: true
+                  
+               });
+        });
+   
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+    <div class="divMainContent">
     <h1>Nieuw Project</h1>
 
 
-    <label>Titel:</label> <input id="txtTitel" type="text"/><br/>
+    <label>Titel:</label> <input id="txtTitel" runat="server" type="text"/><br/>
 
     <label> Tags:</label>
     <ul id="txtTags" runat="server">
@@ -106,20 +125,22 @@
       <ul id="txtSponsor" runat="server">  </ul>
     <br/>
     <label> Partners:</label>
-  <ul id="txtPartners" runat="server">  </ul><br/>
-       
-    <label> Looptijd:</label>
-    <input id="txtLooptijd" type="text" runat="server"/><br/>
+    <input id="txtPartners" type="text" runat="server"/><br/>
+   
+    <label> Looptijd van </label>
+    <input id="txtLooptijdvan" type="text" runat="server"/>   <label> tot </label>  <input id="txtLooptijdtot" type="text" runat="server"/> <br/>
+        <label>Project thema foto:</label><asp:FileUpload id="FileUploadControl" runat="server" />
+  t
     <label> Voorstel:</label>
-    <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine"></asp:TextBox>
+    <asp:TextBox ID="tbWYSIWYG" runat="server" TextMode="MultiLine"></asp:TextBox>
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button"/>
 
     <br/>
         </div>
 
     <script type="text/javascript">
-   
-
+     
+             
 
     </script>
 
@@ -128,6 +149,6 @@
     <asp:HiddenField ID="hdnSelectedParticipants" runat="server"/>
     <asp:HiddenField ID="hdnSelectedGoverend" runat="server"/>
     
-    <asp:HiddenField ID="hdnSelectedDonators" runat="server"/>
-        <asp:HiddenField ID="hdnSelectedPartners" runat="server"/>
+     <asp:HiddenField ID="hdnSelectedDonators" runat="server"/>
+         <asp:HiddenField ID="hdnSelectedParters" runat="server"/>
 </asp:Content>

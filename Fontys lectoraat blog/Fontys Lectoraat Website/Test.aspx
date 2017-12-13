@@ -2,15 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="Scripts/jqueryUI/jquery-ui.min.css" type="text/javascript" charset="utf-8"></script>
+     <link href="Scripts/jqueryUI/jquery-ui.min.js" rel="stylesheet" type="text/css">
+
     <script src="Scripts/tagit/tag-it.min.js" type="text/javascript" charset="utf-8"></script>
     
     <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
-     <link href="Scripts/tagit/jquery.tagit.css" rel="stylesheet" type="text/css">
 
 
 
-    
       
     <script>
         $(function () {
@@ -22,6 +22,8 @@
 
             });
         });
+
+        $("#datepicker").datepicker();
         </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -35,5 +37,7 @@
 
    <ul id="TextBsox1" runat="server">
     </ul>
-
+<input id="datepicker">
+<textarea data-toggle="datepicker"></textarea>
+<div data-toggle="datepicker"></div>
 </asp:Content>

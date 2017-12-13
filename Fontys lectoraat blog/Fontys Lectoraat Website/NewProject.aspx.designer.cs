@@ -13,6 +13,15 @@ namespace Fontys_Lectoraat_Website.Control {
     public partial class NewProject {
         
         /// <summary>
+        /// txtTitel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitel;
+        
+        /// <summary>
         /// txtTags control.
         /// </summary>
         /// <remarks>
@@ -55,25 +64,43 @@ namespace Fontys_Lectoraat_Website.Control {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txtPartners;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPartners;
         
         /// <summary>
-        /// txtLooptijd control.
+        /// txtLooptijdvan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtLooptijd;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtLooptijdvan;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtLooptijdtot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtLooptijdtot;
+        
+        /// <summary>
+        /// FileUploadControl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUploadControl;
+        
+        /// <summary>
+        /// tbWYSIWYG control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbWYSIWYG;
         
         /// <summary>
         /// Button1 control.
@@ -121,12 +148,12 @@ namespace Fontys_Lectoraat_Website.Control {
         protected global::System.Web.UI.WebControls.HiddenField hdnSelectedDonators;
         
         /// <summary>
-        /// hdnSelectedPartners control.
+        /// hdnSelectedParters control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnSelectedPartners;
+        protected global::System.Web.UI.WebControls.HiddenField hdnSelectedParters;
     }
 }

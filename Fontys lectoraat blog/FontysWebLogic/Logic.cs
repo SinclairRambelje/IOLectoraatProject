@@ -50,6 +50,8 @@ public class Logic {
         this.projectBlogContext = new ProjectBlogContext();
         this.eventblogContext = new EventBlogContext();
         this.lectorateBlogContext = new LectorateBlogContext();
+
+        projectContext.logic = this;
     }
 
   

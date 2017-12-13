@@ -64,7 +64,7 @@ public class Lector : XPObject
     [Association("LectorsProjectsGoverned")]
     public XPCollection<Project> ProjectsGoverned
     {
-        get { return GetCollection<Project>("Projects"); }
+        get { return GetCollection<Project>("ProjectsGoverned"); }
     }
 
     [Association]

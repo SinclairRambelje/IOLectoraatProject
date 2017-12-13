@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Newtonsoft.Json.Linq;
 
 namespace Fontys_Lectoraat_Website.Control
 {
@@ -12,14 +15,16 @@ namespace Fontys_Lectoraat_Website.Control
     {
 
 
-        public string projectTags = null;
-        public string lectors = null;
+        private string projectTags = null;
+        private string lectors = null;
 
 
-        public string listFilter_for_parts = null;
+        private string listFilter_for_parts = null;
         StringBuilder output_part = new StringBuilder();
 
         private Logic logic;
+
+        private string projectThemaPhotoPath;
 
         public string ProjectTags
         {
@@ -50,10 +55,83 @@ namespace Fontys_Lectoraat_Website.Control
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            List<String> tags = hdnSelectedTags.Value.Split(',').ToList();
+            //  List<String> tags = hdnSelectedTags.Value.Split(',').ToList();
+
+            //Button1.Text = txtLooptijdtot.Value;
+
+            //var date = DateTime.ParseExact("12/11/2017",
+            //                   "MM/dd/yyyy",
+            //                   CultureInfo.InvariantCulture);
+
+            if (uploadProjectThemaPhoto() != false)
+            {
+
+        
+
+             
+
+
+                var inputData = JObject.FromObject(new
+                {
+
+
+
+                     Titel = txtTitel.Value,
+                 Tags = hdnSelectedTags.Value,
+                 Donators = hdnSelectedDonators.Value,
+                    Participants = hdnSelectedParticipants.Value,
+                 Partners = hdnSelectedParters.Value,
+                 Goverend = hdnSelectedGoverend.Value,
+                 StartDate = txtLooptijdvan.Value,
+                 EndDate = txtLooptijdtot.Value,
+                    ThemePhotoFilePath = projectThemaPhotoPath,
+                    Proposal = tbWYSIWYG.Text
+
+
+            });
+
+                logic.ProjectContext.New_Project(inputData.ToString());
+
+            }
+
+
+
 
 
         }
+
+        public Boolean uploadProjectThemaPhoto()
+        {
+            if (FileUploadControl.HasFile)
+            {
+                try
+                {
+
+
+                    string filename = Path.GetFileName(FileUploadControl.FileName);
+
+                    String path = Server.MapPath("~/App_Data/" + txtTitel.Value + "/");
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
+
+
+                    projectThemaPhotoPath = path + filename;
+                    FileUploadControl.SaveAs(path + filename);
+                    // StatusLabel.Text = "Upload status: File uploaded!";
+
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+           
+  
 
 
 
@@ -105,7 +183,7 @@ namespace Fontys_Lectoraat_Website.Control
                 count++;
 
     
-                output.Append("\"" + lector.User.Person.Surname+","+ lector.User.Person.Firstname + " " + lector.User.Person.Initials  + "\"");
+                output.Append("\"" + lector.User.Person.Firstname + " " + lector.User.Person.Surname + " " + lector.User.Person.Initials  + "\"");
 
                 if (count != lectors.Count)
                 {

@@ -14,6 +14,8 @@ public class Project : XPObject
 			titel = value;
 		}
 	}
+
+
 	private String proposal;
     [DbType("nvarchar(max)")]
     public String Proposal {
@@ -50,19 +52,25 @@ public class Project : XPObject
         get { return endDate; }
         set { endDate = value; }
     }
+    private string themePhotoFilePath;
+    [DbType("nvarchar(2000)")]
+    public string ThemePhotoFilePath
+     {
+         get { return themePhotoFilePath; }
+         set { themePhotoFilePath = value; }
+     }
 
+     //   private String result;
 
- //   private String result;
-
- //   public String Result {
-	//	get {
-	//		return result;
-	//	}
-	//	set {
-	//		result = value;
-	//	}
-	//}
-	private String participants;
+    //   public String Result {
+    //	get {
+    //		return result;
+    //	}
+    //	set {
+    //		result = value;
+    //	}
+    //}
+    private String participants;
     [DbType("nvarchar(3000)")]
     public String Participants {
 		get {
