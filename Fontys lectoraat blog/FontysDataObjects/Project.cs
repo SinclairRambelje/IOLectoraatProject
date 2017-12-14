@@ -81,13 +81,12 @@ public class Project : XPObject
 		}
     }
 
-    [Association]
+ 
+    [Association("Projects-ProjectTags")]
     public XPCollection<ProjectTag> ProjectTags
     {
         get { return GetCollection<ProjectTag>("ProjectTags"); }
     }
-
-    
 
 
     [Association("lectorParticipants")]

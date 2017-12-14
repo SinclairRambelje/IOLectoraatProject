@@ -491,6 +491,7 @@
     <Content Include="Styles\FontysInteractionDesign.css" />
     <Content Include="Test.aspx" />
     <Content Include="test2.aspx" />
+    <Content Include="Test3.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
   </ItemGroup>
@@ -551,6 +552,13 @@
     </Compile>
     <Compile Include="test2.aspx.designer.cs">
       <DependentUpon>test2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test3.aspx.cs">
+      <DependentUpon>Test3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test3.aspx.designer.cs">
+      <DependentUpon>Test3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -103,7 +103,20 @@ public class ProjectContext
         }
         project.Governed.AddRange(goverend);
 
+        List<String> tagNames = inputData.GetValue("Tags").ToString().Split(',').ToList();
+        List<ProjectTag> projectTags = logic.ProjectContext.GetAllProjectTags();
+        foreach (string tagname in tagNames)
+        {
+            foreach (ProjectTag projectTag in projectTags)
+            {
+                if (tagname ==
+                    projectTag.Tag)
+                {
+                    project.ProjectTags.Add(projectTag);
 
+                }
+            }
+        }
 
         project.Save();
 

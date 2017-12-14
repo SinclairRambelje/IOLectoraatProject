@@ -16,4 +16,9 @@ public class ProjectTag : XPObject
     [Association]
     public Project project;
 
+    [Association("Projects-ProjectTags")]
+    public XPCollection<Project> Projects
+    {
+        get { return GetCollection<Project>("Projects"); }
+    }
 }
