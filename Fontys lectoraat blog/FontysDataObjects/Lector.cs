@@ -54,4 +54,29 @@ public class Lector : XPObject
         }
 
     }
+
+    [Association("lectorParticipants")]
+    public XPCollection<Project> Projects
+    {
+        get { return GetCollection<Project>("Projects"); }
+    }
+
+    [Association("LectorsProjectsGoverned")]
+    public XPCollection<Project> ProjectsGoverned
+    {
+        get { return GetCollection<Project>("ProjectsGoverned"); }
+    }
+
+    [Association]
+    public XPCollection<Project> CreatedProjects
+    {
+        get { return GetCollection<Project>("CreatedProjects"); }
+    }
+
+    [Association("Lectors-ProjectBlogs")]
+    public XPCollection<ProjectBlog> ProjectBlogs
+    {
+        get { return GetCollection<ProjectBlog>("ProjectBlogs"); }
+    }
+
 }

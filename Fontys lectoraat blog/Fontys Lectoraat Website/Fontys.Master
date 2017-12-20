@@ -7,6 +7,8 @@
     <title></title>
     <script src="JS/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="Styles/FontysInteractionDesign.css"/>
+   
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -28,8 +30,9 @@
     <ul>
       <li><a href="#">Project Blog</a></li>
       <li><a href="#">Event Blog</a></li>
+         <li><a href="NewProject.aspx">Project</a>
       <li><a href="#">Lectoraat Blog</a></li>
-      <li><a href="Control/NewProject.aspx">Project</a>
+      <li><a href="NewProject.aspx">Project</a>
        
       </li>
      
@@ -64,10 +67,10 @@
         <ul>
 
             <li>
-                <a href="#">Home</a>
+                <a href="Home.aspx">Home</a>
             </li>
             <li>
-                <a href="#">Projecten</a>
+                <a href="Projecten.aspx">Projecten</a>
             </li>
             <li>
                 <a href="#">Blogs</a>
@@ -94,5 +97,9 @@
         </asp:ContentPlaceHolder>
     </div>
 </form>
+    
+   
 </body>
+    
+
 </html>

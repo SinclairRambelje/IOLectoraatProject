@@ -1,7 +1,11 @@
 using System;
-public class Blogtag {
+using DevExpress.Xpo;
+
+public class Blogtag : XPObject
+{
 	private String tag;
-	public String Tag {
+    [DbType("nvarchar(500)")]
+    public String Tag {
 		get {
 			return tag;
 		}
@@ -10,5 +14,10 @@ public class Blogtag {
 		}
 	}
 
+    [Association("Blogs-BlogTags")]
+    public XPCollection<ProjectBlog> ProjectBlogs
+    {
+        get { return GetCollection<ProjectBlog>("ProjectBlogs"); }
+    }
 
 }
