@@ -73,4 +73,10 @@ public class Lector : XPObject
         get { return GetCollection<Project>("CreatedProjects"); }
     }
 
+    [Association("Lectors-ProjectBlogs")]
+    public XPCollection<ProjectBlog> ProjectBlogs
+    {
+        get { return GetCollection<ProjectBlog>("ProjectBlogs"); }
+    }
+
 }

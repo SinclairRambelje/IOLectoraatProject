@@ -1,5 +1,9 @@
 using System;
-public class SprintData {
+using DevExpress.Xpo;
+using FontysDataObjects;
+
+public class SprintData : XPObject
+{
 	private String subquestion;
 	public String Subquestion {
 		get {
@@ -27,16 +31,19 @@ public class SprintData {
 			researchMethod = value;
 		}
 	}
-	private String result;
-	public String Result {
-		get {
-			return result;
-		}
-		set {
-			result = value;
-		}
-	}
-	private String resultDescription;
+    [Association]
+    public XPCollection<SprintResult> SprintResults
+    {
+        get { return GetCollection<SprintResult>("SprintResults"); }
+    }
+
+    [Association]
+    public XPCollection<SprintResearchMethod> SprintResearchMethods
+    {
+        get { return GetCollection<SprintResearchMethod>("SprintResearchMethods"); }
+    }
+
+    private String resultDescription;
 	public String ResultDescription {
 		get {
 			return resultDescription;
@@ -74,5 +81,45 @@ public class SprintData {
 	}
 
 	private ProjectBlog projectBlog;
+
+
+
+    public ProjectBlog ProjectBlog
+    {
+        get
+        {
+            return ProjectBlog;
+        }
+        set
+        {
+            if ((ProjectBlog == value))
+            {
+                return;
+            }
+
+
+            ProjectBlog prevOwner = ProjectBlog;
+            ProjectBlog = value;
+            if (IsLoading)
+            {
+                return;
+            }
+
+            if ((!(prevOwner == null)
+                        && (ProjectBlog.SprintData == this)))
+            {
+                ProjectBlog.SprintData = null;
+            }
+
+
+            if (!(ProjectBlog == null))
+            {
+                ProjectBlog.SprintData = this;
+            }
+
+            OnChanged("Owner");
+        }
+
+    }
 
 }

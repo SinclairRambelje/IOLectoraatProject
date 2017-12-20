@@ -1,7 +1,11 @@
 using System;
-public class ProjectBlog {
+using DevExpress.Xpo;
+
+public class ProjectBlog : XPObject
+{
 	private String titel;
-	public String Titel {
+    [DbType("nvarchar(1000)")]
+    public String Titel {
 		get {
 			return titel;
 		}
@@ -10,7 +14,8 @@ public class ProjectBlog {
 		}
 	}
 	private String blogText;
-	public String BlogText {
+    [DbType("nvarchar(max)")]
+    public String BlogText {
 		get {
 			return blogText;
 		}
@@ -18,17 +23,20 @@ public class ProjectBlog {
 			blogText = value;
 		}
 	}
-	private String photo;
-	public String Photo {
+	private String picturePath;
+    [DbType("nvarchar(1000)")]
+    public String PicturePath
+    {
 		get {
-			return photo;
+			return picturePath;
 		}
 		set {
-			photo = value;
+            picturePath = value;
 		}
 	}
 	private Boolean published;
-	public Boolean Published {
+    [DbType("nvarchar(5)")]
+    public Boolean Published {
 		get {
 			return published;
 		}
@@ -37,11 +45,61 @@ public class ProjectBlog {
 		}
 	}
 
-	private Project project;
-	private Blogtag[] blogtags;
-	private SprintData sprintData;
+    [Association("Blogs-BlogTags")]
+    public XPCollection<Blogtag> Blogtags
+    {
+        get { return GetCollection<Blogtag>("Blogtags"); }
+    }
 
-	private Lector lectorAuthor;
+    [Association]
+    public Project Project;
+
+
+
+    private SprintData sprintData;
+    public SprintData SprintData
+    {
+        get
+        {
+            return sprintData;
+        }
+        set
+        {
+            if ((sprintData == value))
+            {
+                return;
+            }
+
+
+            SprintData prevOwner = sprintData;
+            sprintData = value;
+            if (IsLoading)
+            {
+                return;
+            }
+
+            if ((!(prevOwner == null)
+                        && (sprintData.ProjectBlog == this)))
+            {
+                sprintData.ProjectBlog = null;
+            }
+
+
+            if (!(sprintData == null))
+            {
+                sprintData.ProjectBlog = this;
+            }
+
+            OnChanged("Owner");
+        }
+
+    }
+    [Association("Lectors-ProjectBlogs")]
+    public XPCollection<Lector> LectorAuthors
+    {
+        get { return GetCollection<Lector>("LectorAuthors"); }
+    }
+
 	private Student studentAuthor;
 	private Comment[] comments;
 

@@ -1,8 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Fontys.Master" AutoEventWireup="true" CodeBehind="Test3.aspx.cs" Inherits="Fontys_Lectoraat_Website.Test3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Fontys.Master" AutoEventWireup="true" CodeBehind="Projecten.aspx.cs" Inherits="Fontys_Lectoraat_Website.Test3" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-       <script src="Scripts/listjs/list.min.js">
+    <script src="Scripts/listjs/list.min.js">
            
-       </script>
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.fuzzysearch.js/0.1.0/list.fuzzysearch.min.js"></script>
     <script>
         $( document ).ready(function() {
@@ -102,64 +103,68 @@
 
 
 
-       });
+        });
 
   
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-<h1>Projecten</h1>
+
+    <h1>Projecten</h1>
 
     <div class="center">
-  <a class="refined-search-option" id="openSearch">Verfijn de zoekresultaten +</a></div>
-    <div class="search-table hidden" id="divSearchOptions"><input type="text" id="searchInput" value="" />
-        
-        
-
-        
-        
-        <br><div class="search-variable">
-    <label class="title">Naam</label><br>
-        
-          <input class="name-sort"  id="cbAscending" type="checkbox"/><label>Oplopend</label><br>
-        <input class="name-sort"id="cbDescending"type="checkbox"/><label>Aflopend</label>
-  
+        <a class="refined-search-option" id="openSearch">Verfijn de zoekresultaten +</a>
     </div>
-   <div class="search-variable" style="padding-left:10px;">
-    <label class="title">Trefwoord</label>
-       
-       <br>
-        <select name="speed" id="tagsselect">
-   
-      <option selected="selected">Geen trefwoord</option>
+    <div class="search-table hidden" id="divSearchOptions">
+        <input type="text" id="searchInput" value="" />
 
-    </select>
+
+
+
+
+        <br>
+        <div class="search-variable">
+            <label class="title">Naam</label><br>
+
+            <input class="name-sort" id="cbAscending" type="checkbox" /><label>Oplopend</label><br>
+            <input class="name-sort" id="cbDescending" type="checkbox" /><label>Aflopend</label>
+
+        </div>
+        <div class="search-variable" style="padding-left: 10px;">
+            <label class="title">Trefwoord</label>
+
+            <br>
+            <select  id="tagsselect">
+
+                <option selected="selected">Geen trefwoord</option>
+
+            </select>
+        </div>
     </div>
-  </div>
 
     <div id="projectlist" class="projectlist">
 
-      
-         
- 
-  <ul class="list">
-      <li data-id="template" ><div class="content"></div>
-    
-   </li>
-  </ul >
-        
-        
- <ul class="pagination"></ul>
-</div>
-    
-  
+
+
+
+        <ul class="list">
+            <li data-id="template">
+                <div class="content"></div>
+
+            </li>
+        </ul>
+
+
+        <ul class="pagination"></ul>
+    </div>
+
+
 </asp:Content>
 
 
 
 
-   
+
 
 <%--  <div class=" projectlist"></li>
 <li><img src="http://fontysblogt.nl/wp-content/uploads/2017/11/Talentmanagement.jpg"></img><div class="test"><h2></h2>
@@ -179,5 +184,5 @@
 
 
 
-         <%--    <asp:button class="sort" data-sort="name" ID="btnNameSort" runat="server" text="Sorteer naam" OnClientClick="return false;" />
+<%--    <asp:button class="sort" data-sort="name" ID="btnNameSort" runat="server" text="Sorteer naam" OnClientClick="return false;" />
           <asp:button ID="Button1" runat="server" text="Button" OnClientClick="return false;" />--%>

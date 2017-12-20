@@ -114,5 +114,10 @@ namespace WindowsFormTestApp
         {
 
         }
+
+        private void btnBlogTag_Click(object sender, EventArgs e)
+        {
+            logic.ProjectBlogContext.AddBlogTag(tbBlogTag.Text);
+        }
     }
 }

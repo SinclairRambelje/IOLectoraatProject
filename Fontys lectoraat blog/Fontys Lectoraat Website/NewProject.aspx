@@ -130,7 +130,7 @@
     <label> Looptijd van </label>
     <input id="txtLooptijdvan" type="text" runat="server"/>   <label> tot </label>  <input id="txtLooptijdtot" type="text" runat="server"/> <br/>
         <label>Project thema foto:</label><asp:FileUpload id="FileUploadControl" runat="server" />
-  t
+  
     <label> Voorstel:</label>
     <asp:TextBox ID="tbWYSIWYG" runat="server" TextMode="MultiLine"></asp:TextBox>
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button"/>

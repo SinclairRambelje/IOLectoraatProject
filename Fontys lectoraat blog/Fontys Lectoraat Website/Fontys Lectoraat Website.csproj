@@ -491,7 +491,9 @@
     <Content Include="Styles\FontysInteractionDesign.css" />
     <Content Include="Test.aspx" />
     <Content Include="test2.aspx" />
-    <Content Include="Test3.aspx" />
+    <Content Include="Projecten.aspx" />
+    <Content Include="Test4.aspx" />
+    <Content Include="test5.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
   </ItemGroup>
@@ -553,12 +555,26 @@
     <Compile Include="test2.aspx.designer.cs">
       <DependentUpon>test2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Test3.aspx.cs">
-      <DependentUpon>Test3.aspx</DependentUpon>
+    <Compile Include="Projecten.aspx.cs">
+      <DependentUpon>Projecten.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Test3.aspx.designer.cs">
-      <DependentUpon>Test3.aspx</DependentUpon>
+    <Compile Include="Projecten.aspx.designer.cs">
+      <DependentUpon>Projecten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test4.aspx.cs">
+      <DependentUpon>Test4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test4.aspx.designer.cs">
+      <DependentUpon>Test4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test5.aspx.cs">
+      <DependentUpon>test5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test5.aspx.designer.cs">
+      <DependentUpon>test5.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

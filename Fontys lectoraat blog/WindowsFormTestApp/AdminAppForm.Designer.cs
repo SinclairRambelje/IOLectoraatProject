@@ -31,6 +31,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TbSurname = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbFirstname = new System.Windows.Forms.TextBox();
+            this.tbInitials = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.TbPassword = new System.Windows.Forms.TextBox();
             this.TbUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,12 +46,8 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tbProjecttag = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.tbFirstname = new System.Windows.Forms.TextBox();
-            this.tbInitials = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TbSurname = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.tbBlogTag = new System.Windows.Forms.TextBox();
+            this.btnBlogTag = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -94,6 +96,55 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Create Lector";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // TbSurname
+            // 
+            this.TbSurname.Location = new System.Drawing.Point(276, 173);
+            this.TbSurname.Name = "TbSurname";
+            this.TbSurname.Size = new System.Drawing.Size(100, 22);
+            this.TbSurname.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(186, 176);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Surname";
+            // 
+            // tbFirstname
+            // 
+            this.tbFirstname.Location = new System.Drawing.Point(276, 145);
+            this.tbFirstname.Name = "tbFirstname";
+            this.tbFirstname.Size = new System.Drawing.Size(100, 22);
+            this.tbFirstname.TabIndex = 8;
+            // 
+            // tbInitials
+            // 
+            this.tbInitials.Location = new System.Drawing.Point(276, 117);
+            this.tbInitials.Name = "tbInitials";
+            this.tbInitials.Size = new System.Drawing.Size(100, 22);
+            this.tbInitials.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(188, 148);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Firstname";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(188, 122);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Initials";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // TbPassword
             // 
@@ -149,6 +200,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.tbBlogTag);
+            this.tabPage4.Controls.Add(this.btnBlogTag);
             this.tabPage4.Controls.Add(this.tbProjecttag);
             this.tabPage4.Controls.Add(this.button1);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -176,54 +229,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tbFirstname
+            // tbBlogTag
             // 
-            this.tbFirstname.Location = new System.Drawing.Point(276, 145);
-            this.tbFirstname.Name = "tbFirstname";
-            this.tbFirstname.Size = new System.Drawing.Size(100, 22);
-            this.tbFirstname.TabIndex = 8;
+            this.tbBlogTag.Location = new System.Drawing.Point(194, 226);
+            this.tbBlogTag.Name = "tbBlogTag";
+            this.tbBlogTag.Size = new System.Drawing.Size(160, 22);
+            this.tbBlogTag.TabIndex = 2;
             // 
-            // tbInitials
+            // btnBlogTag
             // 
-            this.tbInitials.Location = new System.Drawing.Point(276, 117);
-            this.tbInitials.Name = "tbInitials";
-            this.tbInitials.Size = new System.Drawing.Size(100, 22);
-            this.tbInitials.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(188, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Firstname";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(188, 122);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Initials";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // TbSurname
-            // 
-            this.TbSurname.Location = new System.Drawing.Point(276, 173);
-            this.TbSurname.Name = "TbSurname";
-            this.TbSurname.Size = new System.Drawing.Size(100, 22);
-            this.TbSurname.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(186, 176);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Surname";
+            this.btnBlogTag.Location = new System.Drawing.Point(360, 226);
+            this.btnBlogTag.Name = "btnBlogTag";
+            this.btnBlogTag.Size = new System.Drawing.Size(149, 23);
+            this.btnBlogTag.TabIndex = 3;
+            this.btnBlogTag.Text = "Add blogtag";
+            this.btnBlogTag.UseVisualStyleBackColor = true;
+            this.btnBlogTag.Click += new System.EventHandler(this.btnBlogTag_Click);
             // 
             // AdminAppForm
             // 
@@ -262,6 +283,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TbSurname;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbBlogTag;
+        private System.Windows.Forms.Button btnBlogTag;
     }
 }
 

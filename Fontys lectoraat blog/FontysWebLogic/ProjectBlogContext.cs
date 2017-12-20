@@ -8,7 +8,19 @@ public class ProjectBlogContext {
 		throw new System.Exception("Not implemented");
 	}
 
-   
+    public void AddBlogTag(String tag)
+    {
+       Blogtag blogtag = new Blogtag();
+        blogtag.Tag = tag;
+        blogtag.Save();
+    }
+    public List<Blogtag> GetAllBlogTags()
+    {
+        XPCollection<Blogtag> collection = new XPCollection<Blogtag>();
+        return collection.ToList();
+    }
+
+
     public String GetProjectBlog(String data) {
 		throw new System.Exception("Not implemented");
 	}

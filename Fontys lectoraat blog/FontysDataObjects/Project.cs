@@ -105,7 +105,11 @@ public class Project : XPObject
     [Association]
     public Lector CreatedBy;
 
-
+    [Association]
+    public XPCollection<ProjectBlog> ProjectBlogs
+    {
+        get { return GetCollection<ProjectBlog>("ProjectBlogs"); }
+    }
 
 
     private Student[] studentParticipants;
