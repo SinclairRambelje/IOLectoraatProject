@@ -106,20 +106,30 @@ namespace Fontys_Lectoraat_Website.Control
             {
                 try
                 {
-
+                    int countprojects;
+                    countprojects = logic.ProjectContext.GetAllProjects().Count();
+                    if (countprojects == null)
+                    {
+                        countprojects = 0;
+                    }
 
                     string filename = Path.GetFileName(FileUploadControl.FileName);
 
-                    String path = Server.MapPath("~/App_Data/" + txtTitel.Value + "/");
-                    if (!Directory.Exists(path))
+                    String virtualpath = "~/App_Data/Projects" + "/Project" + countprojects + "/";
+                    String virtualfilepath = virtualpath + filename;
+
+
+
+                    String filepath = Server.MapPath(virtualfilepath);
+                    if (!Directory.Exists(filepath))
                     {
-                        Directory.CreateDirectory(path);
+                        Directory.CreateDirectory(filepath);
                     }
 
 
-                    projectThemaPhotoPath = path + filename;
-                    FileUploadControl.SaveAs(path + filename);
-                    // StatusLabel.Text = "Upload status: File uploaded!";
+                    projectThemaPhotoPath = virtualfilepath;
+                    FileUploadControl.SaveAs(filepath);
+             
 
                     return true;
                 }

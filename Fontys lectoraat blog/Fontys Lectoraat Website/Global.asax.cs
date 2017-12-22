@@ -13,6 +13,9 @@ namespace Fontys_Lectoraat_Website
     {
         protected void Application_Start()
         {
+            DevExpress.Data.CurrencyDataController.DisableThreadingProblemsDetection = true;
+            DevExpress.Xpo.SimpleDataLayer.SuppressReentrancyAndThreadSafetyCheck = true;
+
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 

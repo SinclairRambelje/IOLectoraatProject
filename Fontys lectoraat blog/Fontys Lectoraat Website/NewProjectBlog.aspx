@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" ValidateRequest="false" Language="C#" MasterPageFile="~/Fontys.Master" AutoEventWireup="true" CodeBehind="Test4.aspx.cs" Inherits="Fontys_Lectoraat_Website.Test4" %>
+﻿<%@ Page Title="" ValidateRequest="false" Language="C#" MasterPageFile="~/Fontys.Master" AutoEventWireup="true" CodeBehind="NewProjectBlog.aspx.cs" Inherits="Fontys_Lectoraat_Website.Test4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -18,10 +18,7 @@
             var Projects = <%=Projects %>;
     
     
-            $.each(Projects,function(key, value) 
-            {
-                ('<%= projectselect.ClientID %>').append('<option value=' + value.title + '>' + value.title + '</option>');
-            });
+            
 
 
             var Tags = <%= Tags %>;
@@ -59,7 +56,7 @@
 
 
             CKEDITOR.replace('<%= tbWYSIWYG.ClientID %>');
-            CKEDITOR.replace('<%= tbWYSIWYGWhatNow.ClientID %>');
+            CKEDITOR.replace('<%= TxtWhatNow.ClientID %>');
           
         });
 
@@ -92,8 +89,8 @@
     <asp:TextBox ID="tbWYSIWYG" runat="server" TextMode="MultiLine"></asp:TextBox>
       <br/>
         <h2>Sprint resultaat</h2>
-           <label>Deelvraag:</label> <input id="Text1" runat="server" type="text"/><br/>
-           <label>Doel deelvraag:</label> <input id="Text2" runat="server" type="text"/>
+           <label>Deelvraag:</label> <input id="txtSubquestion" runat="server" type="text"/><br/>
+           <label>Doel deelvraag:</label> <input id="txtSubquestionGoal" runat="server" type="text"/>
         <br/>    
         
         <div class="cumulative-box"> <div class="first"><label>Methode:</label> </div>
@@ -111,10 +108,10 @@
         
          <br/>
         Impact:
-        <asp:TextBox ID="TextBox1" runat="server" Height="77px" TextMode="MultiLine" Width="308px"></asp:TextBox>
+        <asp:TextBox ID="txtImpact" runat="server" Height="77px" TextMode="MultiLine" Width="308px"></asp:TextBox>
         <br/>
         Hoe nu verder:
-         <asp:TextBox ID="tbWYSIWYGWhatNow" runat="server" TextMode="MultiLine"></asp:TextBox>
+         <asp:TextBox ID="TxtWhatNow" runat="server" TextMode="MultiLine"></asp:TextBox>
         </div>
 
   

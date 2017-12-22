@@ -34,16 +34,36 @@ public class ProjectBlog : XPObject
             picturePath = value;
 		}
 	}
-	private Boolean published;
-    [DbType("nvarchar(5)")]
-    public Boolean Published {
-		get {
-			return published;
-		}
-		set {
-			published = value;
-		}
-	}
+    private int published;
+    [DbType("NUMERIC(1,0)")]
+    public int Published
+    {
+        get
+        {
+            return published;
+        }
+        set
+        {
+            published = value;
+        }
+    }
+
+    public Boolean IsPublished
+    {
+        get
+        {
+            if (Published == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+       
+        }
+       
+    }
 
     [Association("Blogs-BlogTags")]
     public XPCollection<Blogtag> Blogtags
@@ -57,12 +77,11 @@ public class ProjectBlog : XPObject
 
 
     private SprintData sprintData;
+
+
     public SprintData SprintData
     {
-        get
-        {
-            return sprintData;
-        }
+        get { return sprintData; }
         set
         {
             if ((sprintData == value))
@@ -79,7 +98,7 @@ public class ProjectBlog : XPObject
             }
 
             if ((!(prevOwner == null)
-                        && (sprintData.ProjectBlog == this)))
+                 && (sprintData.ProjectBlog == this)))
             {
                 sprintData.ProjectBlog = null;
             }

@@ -58,22 +58,22 @@ namespace Fontys_Lectoraat_Website {
         protected global::System.Web.UI.WebControls.TextBox tbWYSIWYG;
         
         /// <summary>
-        /// Text1 control.
+        /// txtSubquestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSubquestion;
         
         /// <summary>
-        /// Text2 control.
+        /// txtSubquestionGoal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSubquestionGoal;
         
         /// <summary>
         /// PlaceHolderMethode control.
@@ -121,22 +121,22 @@ namespace Fontys_Lectoraat_Website {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl txtInvolved;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtImpact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtImpact;
         
         /// <summary>
-        /// tbWYSIWYGWhatNow control.
+        /// TxtWhatNow control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbWYSIWYGWhatNow;
+        protected global::System.Web.UI.WebControls.TextBox TxtWhatNow;
         
         /// <summary>
         /// hdnSelectedTags control.

@@ -28,4 +28,11 @@
     <br />
     <asp:Button ID="btnAddControls" runat="server" Text="Add Control"
         onclick="btnAddControls_Click" />
+    
+
+      <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine"></asp:TextBox>
+      <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+      <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    
+
 </asp:Content>

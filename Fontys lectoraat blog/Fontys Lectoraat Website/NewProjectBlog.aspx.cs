@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using FontysDataObjects;
 using Newtonsoft.Json.Linq;
 
 namespace Fontys_Lectoraat_Website
@@ -85,7 +87,7 @@ namespace Fontys_Lectoraat_Website
 
             foreach (Project project in logic.ProjectContext.GetAllProjects())
             {
-                projectselect.Items.Add(new ListItem("test", "test"));
+                projectselect.Items.Add(new ListItem( project.Titel, project.Oid.ToString()));
             }
         //CheckBox checkBox1 = new CheckBox();
         //    checkBox1.ID = "cbMethode1";
@@ -172,7 +174,7 @@ namespace Fontys_Lectoraat_Website
 
             output.Append("[");
 
-            List<Blogtag> blogtags = logic.ProjectBlogContext.GetAllBlogTags();
+            List<Blogtag> blogtags = logic.ProjectBlogContext.GetAllProjectBlogTags();
             int count = 0;
 
             foreach (Blogtag blogtag in blogtags)
@@ -214,12 +216,15 @@ namespace Fontys_Lectoraat_Website
 
             HtmlGenericControl myGenericUL = new HtmlGenericControl();
 
-
+         
+       
             countmethodcheckboxes++;
             myGenericUL.Controls.Add(new LiteralControl("<br> "));
             CheckBox checkBox1 = new CheckBox();
             checkBox1.ID = "cbMethode" + countmethodcheckboxes;
             checkBox1.CssClass = "cbMethode" + countmethodtxtboxes;
+
+
             countmethodcheckboxes++;
             myGenericUL.Controls.Add(checkBox1);
             myGenericUL.Controls.Add(new LiteralControl("<label>Veld</label> "));
@@ -242,11 +247,11 @@ namespace Fontys_Lectoraat_Website
             myGenericUL.Controls.Add(checkBox4);
             myGenericUL.Controls.Add(new LiteralControl("<label>Lab/showroom</label> "));
 
-          //  myGenericUL.Controls.Add(new LiteralControl("<script>"+ "  jQuery(\'input." + "cbMethode" + countmethodtxtboxes + "\').on(\'change\',\r\n                function() {\r\n                    jQuery(\'input." + "cbMethode" + countmethodtxtboxes + "').not(this).prop(\'checked\', false);\r\n\r\n            });" +"</script> "));
-          //  PlaceHolder1.Controls.Add(new LiteralControl("<script>" + "  $(\'input." + "cbMethode" + countmethodtxtboxes + "\').on(\'change\',\r\n                function() {\r\n                    $(\'input." + "cbMethode" + countmethodtxtboxes + "').not(this).prop(\'checked\', false);\r\n\r\n            });" + "</script> "));
+            //  myGenericUL.Controls.Add(new LiteralControl("<script>"+ "  jQuery(\'input." + "cbMethode" + countmethodtxtboxes + "\').on(\'change\',\r\n                function() {\r\n                    jQuery(\'input." + "cbMethode" + countmethodtxtboxes + "').not(this).prop(\'checked\', false);\r\n\r\n            });" +"</script> "));
+            //  PlaceHolder1.Controls.Add(new LiteralControl("<script>" + "  $(\'input." + "cbMethode" + countmethodtxtboxes + "\').on(\'change\',\r\n                function() {\r\n                    $(\'input." + "cbMethode" + countmethodtxtboxes + "').not(this).prop(\'checked\', false);\r\n\r\n            });" + "</script> "));
 
-            countmethodtxtboxes++;
-            
+
+
 
 
 
@@ -263,6 +268,7 @@ namespace Fontys_Lectoraat_Website
             myGenericUL.Controls.Add(textbox1);
 
             PlaceHolderMethode.Controls.Add(myGenericUL);
+           
             List<HtmlGenericControl> setup = MyControlState0;
             setup.Add(myGenericUL);
             MyControlState0 = setup;
@@ -395,39 +401,219 @@ namespace Fontys_Lectoraat_Website
 //Description
 //URL
 //Filepath
+            Project project = logic.ProjectContext.GetProjectByID(Convert.ToInt32(projectselect.SelectedValue));
+            string blogPictureFilepath = UploadBlogPicture(project);
 
-        var inputData = JObject.FromObject(new
- {
-
-            ProjectBlog = new
+            if (blogPictureFilepath != null)
             {
-                Project = "",
-                Titel = "",
-                BlogText = "",
-                PicturePath = "",
-                Published = "",
+                JArray jAMethodes = new JArray();
+                JArray jAResults = new JArray();
 
-            },
-            SprintData = new
-            {
-                Subquestion = "",
-                Subquestion_Goal = "",
-                ResearchMethod = "",
-                Result = "",
-                Involved = "",
-                Impact = "",
-                WhatNow = "",
-            },
+                List<SprintResearchMethod> sprintResearchMethods = new List<SprintResearchMethod>();
 
+                //otherwise findcontrol method wont work
+
+            
+
+                int countcheckboxes = 0;
+                int counttextboxes = 0;
+                for (int i = 0; i < MyControlState0.Count(); i++)
+                {
+                    countcheckboxes++;
+                    CheckBox checkBox1 = (CheckBox)PlaceHolderMethode.FindControl("cbMethode"+ countcheckboxes);
+                    countcheckboxes++;
+                    CheckBox checkBox2 = (CheckBox)PlaceHolderMethode.FindControl("cbMethode" + countcheckboxes);
+                    countcheckboxes++;
+                    CheckBox checkBox3 = (CheckBox)PlaceHolderMethode.FindControl("cbMethode" + countcheckboxes);
+                    countcheckboxes++;
+                    CheckBox checkBox4 = (CheckBox)PlaceHolderMethode.FindControl("cbMethode" + countcheckboxes);
+
+                    counttextboxes++;
+                        TextBox textBox = (TextBox)PlaceHolderMethode.FindControl("tbMethode" + counttextboxes);
+
+
+                    SprintResearchMethod sprintResearchMethod = new SprintResearchMethod();
+
+                    if (checkBox1.Checked == true)
+                    {
+                        sprintResearchMethod.Method = "Veld";
+                    }
+                    else if (checkBox2.Checked == true)
+                    {
+                        sprintResearchMethod.Method = "Bieb";
+                    }
+                    else if (checkBox3.Checked == true)
+                    {
+                        sprintResearchMethod.Method = "Werkplaats";
+                    }
+                    else if (checkBox4.Checked == true)
+                    {
+                        sprintResearchMethod.Method = "Lab/Showroom";
+                    }
+
+                    sprintResearchMethod.Description = textBox.Text;
+
+                    sprintResearchMethods.Add(sprintResearchMethod);
+                }
+
+                 countcheckboxes = 0;
+                 counttextboxes = 0;
+                int countfileuploads = 0;
+
+                List<SprintResult> sprintResults = new List<SprintResult>();
+                for (int i = 0; i < MyControlState1.Count(); i++)
+                {
+                    countcheckboxes++;
+                    CheckBox checkBox1 = (CheckBox)PlaceHolderResult.FindControl("cbResult" + countcheckboxes);
+                    countcheckboxes++;
+                    CheckBox checkBox2 = (CheckBox)PlaceHolderResult.FindControl("cbResult" + countcheckboxes);
+
+                    countfileuploads++;
+                    FileUpload fileUpload = (FileUpload)PlaceHolderResult.FindControl("fileUpload" + countfileuploads);
+
+
+
+                    counttextboxes++;
+                    TextBox textBox = (TextBox)PlaceHolderResult.FindControl("tbResult" + counttextboxes);
+
+                    SprintResult sprintResult = new SprintResult();
+                    sprintResult.Filepath = UploadSprintResult(project, fileUpload, i);
+                    sprintResult.Description = textBox.Text;
+
+                    sprintResults.Add(sprintResult);
+                }
+
+
+                var inputData = JObject.FromObject(new
+                {
+
+                    ProjectBlog = new
+                    {
+                        Project = projectselect.SelectedValue,
+                        Titel = txtTitel.Value,
+                        BlogText = tbWYSIWYG.Text,
+                        PicturePath = blogPictureFilepath,
+                        Blogtags = hdnSelectedTags.Value,
+                        Published = "",
+
+                    },
+                    SprintData = new
+                    {
+                        Subquestion =txtSubquestion.Value,
+                        Subquestion_Goal = txtSubquestionGoal.Value,
+                        Involved = hdnSelectedInvolved.Value,
+                        Impact = txtImpact.Text,
+                        WhatNow = TxtWhatNow.Text,
+                    },
+
+
+
+
+
+
+
+                });
+
+                
+                logic.ProjectBlogContext.NewProjectBlog(inputData.ToString(),sprintResults,sprintResearchMethods);
+            }
 
      
-   
-
-
-  
- });
 
 
         }
+        public string UploadBlogPicture(Project project)
+        {
+            string filepath;
+            if (FileUploadControl.HasFile)
+            {
+                try
+                {
+
+
+                    string filename = Path.GetFileName(FileUploadControl.FileName);
+
+
+                    int countblogs;
+
+                    if (project.ProjectBlogs != null)
+                    {
+                        countblogs = project.ProjectBlogs.Count;
+                    }
+                    else
+                    {
+                        countblogs = 0;
+                    }
+
+                    String virtualpath = "~/App_Data/ProjectData" + "/" + project.Oid + "/" + "projectBlog" + countblogs +  "/";
+                    String virtualfilepath = virtualpath + filename;
+
+                    String path = Server.MapPath(virtualpath);
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
+
+                    filepath = path + filename;
+                    FileUploadControl.SaveAs(filepath);
+             
+
+                    return virtualfilepath;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+            return null;
+        }
+
+
+        public string UploadSprintResult(Project project, FileUpload fileUpload, int resultcount)
+        {
+            string filepath;
+            if (fileUpload.HasFile)
+            {
+                try
+                {
+
+
+                    string filename = Path.GetFileName(fileUpload.FileName);
+
+
+                    int countblogs;
+
+                    if (project.ProjectBlogs != null)
+                    {
+                        countblogs = project.ProjectBlogs.Count;
+                    }
+                    else
+                    {
+                        countblogs = 0;
+                    }
+
+                    String virtualpath = "~/App_Data/ProjectData" + "/" + project.Oid + "/" + "projectBlog" + countblogs + "/"+"Sprintdata/result" + resultcount + "/"; 
+                    String virtualfilepath = virtualpath + filename;
+
+                    String path = Server.MapPath(virtualpath);
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
+
+                    filepath = path + filename;
+                    fileUpload.SaveAs(filepath);
+
+
+                    return virtualfilepath;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+            return null;
+        }
+
     }
 }

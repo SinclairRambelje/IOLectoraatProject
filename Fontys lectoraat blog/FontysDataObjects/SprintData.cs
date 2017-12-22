@@ -5,7 +5,8 @@ using FontysDataObjects;
 public class SprintData : XPObject
 {
 	private String subquestion;
-	public String Subquestion {
+    [DbType("nvarchar(2000)")]
+    public String Subquestion {
 		get {
 			return subquestion;
 		}
@@ -14,7 +15,8 @@ public class SprintData : XPObject
 		}
 	}
 	private String subquestion_Goal;
-	public String Subquestion_Goal {
+    [DbType("nvarchar(2000)")]
+    public String Subquestion_Goal {
 		get {
 			return subquestion_Goal;
 		}
@@ -23,7 +25,8 @@ public class SprintData : XPObject
 		}
 	}
 	private ResearchMethod researchMethod;
-	public ResearchMethod ResearchMethod {
+    [DbType("nvarchar(100)")]
+    public ResearchMethod ResearchMethod {
 		get {
 			return researchMethod;
 		}
@@ -44,7 +47,8 @@ public class SprintData : XPObject
     }
 
     private String resultDescription;
-	public String ResultDescription {
+    [DbType("nvarchar(2000)")]
+    public String ResultDescription {
 		get {
 			return resultDescription;
 		}
@@ -53,7 +57,8 @@ public class SprintData : XPObject
 		}
 	}
 	private String involved;
-	public String Involved {
+    [DbType("nvarchar(max)")]
+    public String Involved {
 		get {
 			return involved;
 		}
@@ -62,7 +67,8 @@ public class SprintData : XPObject
 		}
 	}
 	private String impact;
-	public String Impact {
+    [DbType("nvarchar(2000)")]
+    public String Impact {
 		get {
 			return impact;
 		}
@@ -71,7 +77,8 @@ public class SprintData : XPObject
 		}
 	}
 	private String whatNow;
-	public String WhatNow {
+    [DbType("nvarchar(2000)")]
+    public String WhatNow {
 		get {
 			return whatNow;
 		}
@@ -88,33 +95,33 @@ public class SprintData : XPObject
     {
         get
         {
-            return ProjectBlog;
+            return projectBlog;
         }
         set
         {
-            if ((ProjectBlog == value))
+            if ((projectBlog == value))
             {
                 return;
             }
 
 
-            ProjectBlog prevOwner = ProjectBlog;
-            ProjectBlog = value;
+            ProjectBlog prevOwner = projectBlog;
+            projectBlog = value;
             if (IsLoading)
             {
                 return;
             }
 
             if ((!(prevOwner == null)
-                        && (ProjectBlog.SprintData == this)))
+                        && (projectBlog.SprintData == this)))
             {
-                ProjectBlog.SprintData = null;
+                projectBlog.SprintData = null;
             }
 
 
-            if (!(ProjectBlog == null))
+            if (!(projectBlog == null))
             {
-                ProjectBlog.SprintData = this;
+                projectBlog.SprintData = this;
             }
 
             OnChanged("Owner");

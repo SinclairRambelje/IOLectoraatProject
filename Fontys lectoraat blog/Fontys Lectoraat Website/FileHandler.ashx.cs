@@ -21,8 +21,18 @@ namespace Fontys_Lectoraat_Website
                 Logic logic = new Logic();
                 Project project = logic.ProjectContext.GetProjectByID(Convert.ToInt32(context.Request.QueryString["id"]));
                 context.Response.ContentType = "application/octet-stream";
-                context.Response.AppendHeader("Content-Disposition", ("attachment; filename=" + context.Request.QueryString["id"]));
-                context.Response.TransmitFile( project.ThemePhotoFilePath);
+                context.Response.AppendHeader("Content-Disposition", ("attachment; filename=" + project.Titel + ".jpg"));
+                context.Response.TransmitFile(context.Server.MapPath(project.ThemePhotoFilePath));
+                context.Response.End();
+            }
+
+            if ((operation == "pictureprojectblog"))
+            {
+                Logic logic = new Logic();
+                ProjectBlog projectBlog = logic.ProjectBlogContext.GetProjectBlogByID(Convert.ToInt32(context.Request.QueryString["id"]));
+                context.Response.ContentType = "application/octet-stream";
+                context.Response.AppendHeader("Content-Disposition", ("attachment; filename=" + projectBlog.Titel+".jpg"));
+                context.Response.TransmitFile(context.Server.MapPath(projectBlog.PicturePath));
                 context.Response.End();
             }
         }

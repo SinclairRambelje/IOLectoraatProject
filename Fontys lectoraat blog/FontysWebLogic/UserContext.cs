@@ -6,7 +6,8 @@ using Newtonsoft.Json.Linq;
 
 
 public class UserContext {
-	public User Login(String username, String password) {
+    public Logic logic;
+    public User Login(String username, String password) {
         User user = DevExpress.Xpo.Session.DefaultSession.FindObject<User>
         (
 	        DevExpress.Data.Filtering.CriteriaOperator.Parse(

@@ -135,6 +135,7 @@
     <Content Include="Global.asax" />
     <Content Include="JS\jquery-3.2.1.min.js" />
     <Content Include="LogIn.aspx" />
+    <Content Include="ProjectBlogs.aspx" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\CHANGES.html" />
     <Content Include="Scripts\ckeditor\ckeditor.asp" />
@@ -492,7 +493,7 @@
     <Content Include="Test.aspx" />
     <Content Include="test2.aspx" />
     <Content Include="Projecten.aspx" />
-    <Content Include="Test4.aspx" />
+    <Content Include="NewProjectBlog.aspx" />
     <Content Include="test5.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
@@ -525,6 +526,13 @@
     </Compile>
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBlogs.aspx.cs">
+      <DependentUpon>ProjectBlogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectBlogs.aspx.designer.cs">
+      <DependentUpon>ProjectBlogs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Fontys.Master.cs">
@@ -562,12 +570,12 @@
     <Compile Include="Projecten.aspx.designer.cs">
       <DependentUpon>Projecten.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Test4.aspx.cs">
-      <DependentUpon>Test4.aspx</DependentUpon>
+    <Compile Include="NewProjectBlog.aspx.cs">
+      <DependentUpon>NewProjectBlog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Test4.aspx.designer.cs">
-      <DependentUpon>Test4.aspx</DependentUpon>
+    <Compile Include="NewProjectBlog.aspx.designer.cs">
+      <DependentUpon>NewProjectBlog.aspx</DependentUpon>
     </Compile>
     <Compile Include="test5.aspx.cs">
       <DependentUpon>test5.aspx</DependentUpon>
