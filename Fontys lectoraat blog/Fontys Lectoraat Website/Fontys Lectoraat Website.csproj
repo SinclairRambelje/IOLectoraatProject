@@ -131,10 +131,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Home - Copy.aspx" />
+    <Content Include="Images\Bieb.png" />
+    <Content Include="Images\Lab.png" />
+    <Content Include="Images\Showroom.png" />
+    <Content Include="Images\Veld.png" />
+    <Content Include="Images\Werkplaats.png" />
     <Content Include="NewProject.aspx" />
     <Content Include="Global.asax" />
     <Content Include="JS\jquery-3.2.1.min.js" />
     <Content Include="LogIn.aspx" />
+    <Content Include="Blog.aspx" />
     <Content Include="ProjectBlogs.aspx" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\CHANGES.html" />
@@ -495,6 +501,7 @@
     <Content Include="Projecten.aspx" />
     <Content Include="NewProjectBlog.aspx" />
     <Content Include="test5.aspx" />
+    <Content Include="Portfolio.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
   </ItemGroup>
@@ -526,6 +533,13 @@
     </Compile>
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjectBlogs.aspx.cs">
       <DependentUpon>ProjectBlogs.aspx</DependentUpon>
@@ -583,6 +597,13 @@
     </Compile>
     <Compile Include="test5.aspx.designer.cs">
       <DependentUpon>test5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portfolio.aspx.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portfolio.aspx.designer.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,7 @@
             var options = {
                 valueNames: [
                   'homedisplay',
+                     { attr: 'onclick', name: 'li' },
                   { data: ['id'] }
                 ]
             };
@@ -26,8 +27,8 @@
     
   <div class="container " id="projectlist">
         <ul class="list">
-            <li data-id="template">
-                <div class="homedisplay"></div>
+            <li data-id="template"  >
+                <div class="homedisplay" ></div>
             </li>
         </ul>
     </div>

@@ -8,11 +8,11 @@ using Newtonsoft.Json.Linq;
 
 namespace Fontys_Lectoraat_Website
 {
-    public partial class ProjectBlogs : System.Web.UI.Page
+    public partial class Test6 : System.Web.UI.Page
     {
-
         private Logic logic;
 
+      private Project project;
         private string projectblogs;
         private string projectBlogtags;
 
@@ -26,10 +26,91 @@ namespace Fontys_Lectoraat_Website
             get { return projectBlogtags; }
         }
 
+        public String Titel
+        {
+            get { return project.Titel; }
+     
+        }
+
+        public String Involved
+        {
+            get { return GetParticipants(); }
+
+        }
+        public String Sponsors
+        {
+            get { return project.Donators; }
+
+        }
+
+        public String ProjectTags
+        {
+            get { return GetTags(); }
+
+        }
+     
+        public String Description
+        {
+            get { return project.Proposal; }
+
+        }
+
+        public String ProjectThemePicture
+        {
+            get { return "<img src ='FileHandler.ashx?op=download&id=" + project.Oid + "' > </ div > "; }
+
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             logic = new Logic();
+            this. project = logic.ProjectContext.GetProjectByID(Convert.ToInt32(Request.QueryString["id"]));
+
             projectblogs = GetProjectData();
+
+
+
+
+
+        }
+
+        public string GetTags()
+        {
+            List<ProjectTag> projectTags = project.ProjectTags.ToList();
+            string tagbuild = "";
+            int count = 0;
+            foreach (ProjectTag projectTag in projectTags)
+            {
+                if (count == 0)
+                {
+                    tagbuild += "<span> ";
+                }
+                count++;
+
+                tagbuild += "<a class='tag'>" + projectTag.Tag + "</a> ";
+
+
+
+                if (count == projectTags.Count)
+                {
+                    tagbuild += "</span>";
+                }
+
+
+
+
+            }
+        
+            return tagbuild;
+        }
+
+        public string GetParticipants()
+        {
+            string Participants = "";
+            foreach (string participant in project.Participants.Split(',').ToList())
+            {
+                Participants += " ," + participant;
+            }
+            return Participants;
         }
 
         public string GetProjectData()
@@ -76,7 +157,7 @@ namespace Fontys_Lectoraat_Website
                     jArrayTags.Add(inputData2);
 
                 }
-          
+
 
                 this.projectBlogtags = jArrayTags.ToString();
 
@@ -92,19 +173,18 @@ namespace Fontys_Lectoraat_Website
                     content =
                     "<img src='FileHandler.ashx?op=pictureprojectblog&id=" + projectBlog.Oid + "'><div class='innercontent'>" +
                     "<div class= 'titel'>" + projectBlog.Titel + "</div><p>" + infoText +
-                    "</p>"+ tagbuild + "<div class='tagcontainer'>Project: " +
-                    projectBlog.Project.Titel + "</div><br><br><br><button onclick=\"location.href = 'Blog.aspx?id=" + projectBlog.Oid + "'; \" type='button'>Lees meer</button><br></div>",
+                    "</p>" + tagbuild + "<div class='tagcontainer'>Project: " +
+                    projectBlog.Project.Titel + "</div><br><br><br><button>Lees meer</button><br></div>",
                     name = projectBlog.Titel,
                     tags = tagbuild
                 });
                 jArrayProjectBlogs.Add(inputData);
-            
+
             }
 
 
-     
+
             return jArrayProjectBlogs.ToString();
         }
     }
-
 }

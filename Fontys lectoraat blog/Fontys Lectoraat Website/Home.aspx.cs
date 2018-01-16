@@ -48,7 +48,8 @@ namespace Fontys_Lectoraat_Website
             {
                 var inputData = JObject.FromObject(new
                 {
-                    homedisplay = "<div><P>" + project.Titel + "</P></div><img src='FileHandler.ashx?op=download&id=" + project.Oid + "'> </div>",
+                    homedisplay = "<div onclick=\"location.href = 'Portfolio.aspx?id="+project.Oid+"'; \"><P>" + project.Titel + "</P></div><img onclick=\"location.href = 'Portfolio.aspx?id=" + project.Oid + "'; \" src='FileHandler.ashx?op=download&id=" + project.Oid + "'> </div>",
+                  
                 });
                 jArray.Add(inputData);
             }

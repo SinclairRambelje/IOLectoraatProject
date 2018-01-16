@@ -35,6 +35,8 @@ namespace Fontys_Lectoraat_Website
                 context.Response.TransmitFile(context.Server.MapPath(projectBlog.PicturePath));
                 context.Response.End();
             }
+
+
         }
 
         public bool IsReusable
