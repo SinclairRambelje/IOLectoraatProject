@@ -86,7 +86,7 @@ namespace Fontys_Lectoraat_Website
                     //content = "<div><P>" + project.Titel + "</P></div><img src='FileHandler.ashx?op=download&id=" + project.Oid + "'> </div>",
 
                     //<div class='tagcontainer'>Tags:<span><a class='tag'>UI</a></span></div></div>
-                    content = "<img src='FileHandler.ashx?op=download&id=" + project.Oid + "'/><div class='info'><h2>"+project.Titel+"</h2><p>"+infoText+ "</p><a class='readmore'>Lees meer</a><br><br>" + tagbuild,
+                    content = "<img src='FileHandler.ashx?op=download&id=" + project.Oid + "'/><div class='info'><h2>"+project.Titel+"</h2><p>"+infoText+ "</p><a href='Portfolio.aspx?id=" + project.Oid + "' class='readmore'>Lees meer</a><br><br>" + tagbuild,
                 name = project.Titel,
                 tags = tagbuild
                 });

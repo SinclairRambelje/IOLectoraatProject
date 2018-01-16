@@ -1,4 +1,373 @@
-﻿/* ~~ Search table ~~ */
+﻿
+
+.blog {
+     font-family: Sans-Serif;
+   width: 64%;
+     margin-left: auto;
+      margin-right:auto;
+    overflow: hidden; /* will contain if #first is longer than #second */
+  line-height: 24px;
+  margin-top:50px;
+}
+
+.blog *{
+  font-family: Helvetica, Arial, Sans-Serif;
+ 
+
+  line-height: 24px;
+}
+.blog img{width:99%;}
+.blog .first {
+    width: 50%;
+    float:left; 
+
+}
+.blog .second {
+   width: 29%;
+   margin-left: auto;
+    overflow: hidden;
+
+}
+.blog .details
+{
+  
+   
+     font-size: 12px;
+     font-style: italic;
+line-height:20px;
+  margin-top:3px;
+  margin-bottom:9px;
+}
+.blog .header1{
+   color: #663366;
+ font-weight:bold;
+    
+      font-family: Arial Narow;
+  font-size: 27px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+  line-height:20px;
+}
+.blog .header2{
+  font-style: normal;
+ font-weight:bold;
+     color: #663366;
+      font-family: Arial Narow;
+  font-size: 20px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+  line-height:20px;
+}
+.blog .header3{
+
+ font-weight:bold;
+     color: #663366;
+      font-family: Arial Narow;
+  font-size: 19px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+  line-height:20px;
+ 
+}
+.blog .research-img{
+width:60px;
+}
+
+.blog .tag{
+   text-decoration: underline;
+}
+
+.blog .project-link{
+   text-decoration: underline;
+  color:#e5007d;
+}
+
+.blog .tagcontainer{
+    
+ 
+}
+
+.blog textarea{
+    
+ border:White;
+  background-color:#eeeeee;
+  width:100%;
+  height:150px;
+  
+
+  resize: none;
+}
+.blog input{
+    
+ border:White;
+  background-color:#eeeeee;
+  width:100%;
+  margin-top:8px;
+margin-bottom:8px;
+}
+.blog button{
+    background-color: white;
+  border-color: #e5007d;
+  color: #e5007d;
+     border-style: solid;
+
+}
+.blog ul {
+  margin-left: auto;
+    padding: 0; 
+    margin: 0;
+    margin-top: 24px;
+    list-style-type: none;
+}
+
+
+.blog .recent-blogs{
+
+  margin-top:48px;
+}
+/* ~~ projectportfolio ~~ */
+
+.projectportfolio .info {
+  font-family: sans-serif;
+
+     margin-left: auto;
+      margin-right:auto;
+font-size:16px;
+  line-height: 20px;
+}
+
+.projectportfolio img{   margin-left: 20%;
+width:80%;}
+
+.projectportfolio .info label{
+  font-family: arial-narow;
+font-size:18px;
+     margin-left: auto;
+      margin-right:auto;
+font-weight:bold;
+  line-height: 20px;
+    color: #663366;
+}
+
+.projectportfolio {
+  font-family: Sans-Serif;
+   width: 64%;
+     margin-left: auto;
+      margin-right:auto;
+    overflow: hidden; /* will contain if #first is longer than #second */
+  line-height: 24px;
+    padding-top: 40px;
+}
+
+
+.projectportfolio *{
+  font-family: Helvetica, Arial, Sans-Serif;
+ 
+
+  line-height: 24px;
+}
+
+
+
+.projectportfolio  .first {
+    width: 50%;
+    float:left; /* add this */
+ padding-right:10px;
+}
+
+
+.projectportfolio button{
+    border-style: solid;
+  background-color: #e5007d;
+color:white;
+  border-color:#e5007d;
+  font-weight: bold;
+ border-radius: 4px;
+  padding-right:7px;
+padding-left:7px;
+  margin-top:7px;
+}
+
+
+.projectportfolio .second {
+ 
+    overflow: hidden; 
+}
+
+.projectportfolio-header1{
+    font-weight:bold;
+ 
+ 
+     color: #663366;
+      font-family: Arial Narow;
+  font-size: 27px;
+   padding-top: 0px;
+   padding-bottom: 25px;
+
+}
+
+.projectportfolio-header3{
+  font-weight:bold;
+
+     color: #663366;
+      font-family: Arial Narow;
+  font-size: 24px;
+    padding-bottom: 15px;
+}
+
+
+
+.projectportfolio-header2{
+font-weight:bold;
+  color: #663366;
+      font-family: Arial Narow;
+  font-size: 22px;
+   padding-top: 20px;
+    padding-bottom: 5px;
+  
+}
+
+.projectportfolio .tag{
+   text-decoration: underline;
+}
+
+.projectportfolio .tagcontainer{
+    
+ 
+}
+
+
+/* ~~ project blogs ~~ */
+
+.projectblogs {
+ width: 75%;
+     margin-left:  24%;
+      margin-right:auto;
+
+}
+
+
+
+
+
+
+.projectblogs ul {
+
+    padding: 0; 
+    margin: 0;
+    list-style-type: none;
+}
+.projectblogs ul li {
+  
+    width: 23%;
+    height: 350px;
+
+    float: left;
+  padding-left:35px;
+   padding-right:35px;
+   padding-bottom:45px;
+      padding-top:25px;
+}
+
+
+.projectblogs .titel{
+font-size: 28px;
+
+  color: #663366;
+  margin:0;
+  padding-bottom:1px;
+  padding-top:1px;
+
+}
+
+.projectblogdisplay {
+   
+
+
+}
+
+.projectblogs button{
+      border-style: solid;
+  background-color: #e5007d;
+color:white;
+  border-color:#e5007d;
+  font-weight: bold;
+}
+
+.projectblogs h2{
+
+  
+
+  
+  font-size: 25px;
+  line-height: 0;
+  color: #663366;
+  margin:0;
+  padding-bottom:15px;
+  padding-top:10px;
+
+}
+
+.projectblogs h3{
+  text-align: center;
+  font-size: 16px;
+  line-height: 0;
+  color: #663366;
+  margin:0;
+  padding-bottom:10px;
+  padding-top:10px;
+}
+
+.projectblogs p{
+  font-size: 16px;
+
+  margin:0;
+padding-bottom:5px;
+ 
+}
+
+
+.projectblogs .info{
+ 
+ font-size: 10px;
+  margin:0;
+
+ 
+}
+
+.projectblogs div{
+
+ font-size: 15px;
+  margin:0;
+ 
+ 
+}
+
+.projectblogs a{
+ 
+
+ cursor: pointer;
+ 
+   text-decoration: underline;
+}
+
+
+.projectblogs img{width:100%; height:100%;
+   
+  
+ }
+
+.projectblogs .tag{
+   text-decoration: underline;
+}
+
+.projectblogs .tagcontainer{
+    float: left;
+    font-size: 12px;
+  padding-top:5px;
+   padding-bottom:5px;
+}
+/* ~~ Search table ~~ */
 
 .search-table{  width: 47.3%;
      margin-left: auto;
@@ -113,7 +482,13 @@ height: 140px;
      margin-left: auto;
 
 }
-
+.projectlist button{
+      border-style: solid;
+  background-color: #e5007d;
+color:white;
+  border-color:#e5007d;
+  font-weight: bold;
+}
 .projectlist p{
 
   margin:0;
@@ -186,6 +561,7 @@ margin:0;
    top: 5%;
     margin-top: auto;
       margin-bottom:auto;
+      cursor: pointer;
 }
 
 .homedisplay p{
@@ -416,3 +792,10 @@ float:left;
 {
 	display:block
 }
+
+
+
+
+
+
+

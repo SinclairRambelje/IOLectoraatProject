@@ -1,6 +1,7 @@
 using System;
 public class EventBlogContext {
-	public String GetAllEventBlogs(String data) {
+    public Logic logic;
+    public String GetAllEventBlogs(String data) {
 		throw new System.Exception("Not implemented");
 	}
 	public String GetEventBlog(String data) {

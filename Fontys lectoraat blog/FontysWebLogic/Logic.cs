@@ -52,6 +52,10 @@ public class Logic {
         this.lectorateBlogContext = new LectorateBlogContext();
 
         projectContext.logic = this;
+        projectBlogContext.logic = this;
+        userContext.logic = this;
+        eventblogContext.logic = this;
+        lectorateBlogContext.logic = this;
     }
 
   

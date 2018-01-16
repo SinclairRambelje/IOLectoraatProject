@@ -117,7 +117,13 @@ namespace WindowsFormTestApp
 
         private void btnBlogTag_Click(object sender, EventArgs e)
         {
-            logic.ProjectBlogContext.AddBlogTag(tbBlogTag.Text);
+
+            List<string> tags = tbBlogTag.Text.Split(',').ToList();
+            foreach (string tag in tags)
+            {
+                logic.ProjectBlogContext.AddBlogTag(tag);
+            }
+           
         }
     }
 }

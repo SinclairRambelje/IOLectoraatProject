@@ -1,6 +1,7 @@
 using System;
 public class LectorateBlogContext {
-	public String GetAllLectorateBlogs(String data) {
+    public Logic logic;
+    public String GetAllLectorateBlogs(String data) {
 		throw new System.Exception("Not implemented");
 	}
 	public String GetLectorateBlog(String data) {
