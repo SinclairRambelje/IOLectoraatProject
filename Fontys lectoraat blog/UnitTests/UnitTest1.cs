@@ -8,13 +8,13 @@ namespace UnitTests
     {
         
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethodds1()
         {
             Assert.AreEqual(1,2);
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void TestMethosdsd2()
         {
             Assert.AreEqual(1, 2);
         }
