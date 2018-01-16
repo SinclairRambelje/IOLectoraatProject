@@ -63,6 +63,16 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FontysDataObjects\FontysDataObjects.csproj">
+      <Project>{7d973793-ca8e-48bc-b7ca-d7e8df706367}</Project>
+      <Name>FontysDataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FontysWebLogic\FontysWebLogic.csproj">
+      <Project>{59ced325-abd8-406c-a4ad-edae2efe3faf}</Project>
+      <Name>FontysWebLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

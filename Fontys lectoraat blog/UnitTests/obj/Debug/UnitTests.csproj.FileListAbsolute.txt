@@ -4,3 +4,13 @@ C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTes
 C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\DevExpress.Xpo.v16.1.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\DevExpress.Xpo.v16.1.Extensions.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\FontysDataObjects.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\FontysWebLogic.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\FontysDataObjects.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\FontysWebLogic.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\sinne\Documents\GitHub\IOLectoraatProject\Fontys lectoraat blog\UnitTests\bin\Debug\Newtonsoft.Json.xml
